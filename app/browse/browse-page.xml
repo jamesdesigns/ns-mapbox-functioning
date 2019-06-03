@@ -23,7 +23,7 @@
           mapStyle="traffic_night"
           latitude="52.3702160"
           longitude="4.8951680"
-          zoomLevel="8"
+          zoomLevel="3"
           showUserLocation="true"
           mapReady="onMapReady">
       </map:MapboxView>
