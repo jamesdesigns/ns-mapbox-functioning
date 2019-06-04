@@ -18,8 +18,8 @@ function onMapReady(args) {
   // .. or use the convenience methods exposed on args.map, for instance:
   args.map.addMarkers([
     {
-      lat: 52.3602160,
-      lng: 4.8891680,
+      lat: 40.280155,
+      lng: -111.726463,
       title: 'One-line title here',
       subtitle: 'Really really nice location',
       selected: true, // makes the callout show immediately when the marker is added (note: only 1 marker can be selected at a time)
