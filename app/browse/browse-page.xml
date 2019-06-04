@@ -21,9 +21,9 @@
       <map:MapboxView
           accessToken="pk.eyJ1IjoiamFtZXNkZXNpZ25zIiwiYSI6ImNqdzJraDZ6dDA1MzMzem5uYWlvaWtqMXcifQ.TsX_YhN7MDaZ8zz5HYedFg"
           mapStyle="traffic_night"
-          latitude="52.3702160"
-          longitude="4.8951680"
-          zoomLevel="3"
+          latitude="40.659775"
+          longitude="-111.896019"
+          zoomLevel="8"
           showUserLocation="true"
           mapReady="onMapReady">
       </map:MapboxView>
