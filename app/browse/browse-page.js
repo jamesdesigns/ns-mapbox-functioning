@@ -144,17 +144,9 @@ function onMapReady(args) {
         subtitle: 'Really really nice location',
         selected: true, // makes the callout show immediately when the marker is added (note: only 1 marker can be selected at a time)
         onCalloutTap: function(){console.log("'Nice location' marker callout tapped");}
-      },
-    {
-        lat: 40.280155,
-        lng: -111.726463,
-        title: 'One-line title here',
-        subtitle: 'Really really nice location',
-        selected: true, // makes the callout show immediately when the marker is added (note: only 1 marker can be selected at a time)
-        onCalloutTap: function(){console.log("'Nice location' marker callout tapped");}
       }
 ]
   );
 }
- 
+
 exports.onMapReady = onMapReady;
