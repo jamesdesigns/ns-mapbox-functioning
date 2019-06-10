@@ -1,4 +1,4 @@
-const observableModule = require("tns-core-modules/data/observable");
+const observableModule = require("./node_modules/tns-core-modules/data/observable");
 
 function SearchViewModel() {
     const viewModel = observableModule.fromObject({
