@@ -1,54 +1,66 @@
 const observableModule = require("tns-core-modules/data/observable");
 
-function HomeItemsViewModel() {
+function RoutesItemsViewModel() {
     const viewModel = observableModule.fromObject({
         items: [
             {
-                name: "Item 1",
+                name: "Ogden",
                 description: "Description for Item 1"
             },
             {
-                name: "Item 2",
+                name: "Roy",
                 description: "Description for Item 2"
             },
             {
-                name: "Item 3",
+                name: "Clearfield",
                 description: "Description for Item 3"
             },
             {
-                name: "Item 4",
+                name: "Layton",
                 description: "Description for Item 4"
             },
             {
-                name: "Item 5",
+                name: "Farmington",
                 description: "Description for Item 5"
             },
             {
-                name: "Item 6",
+                name: "Woods Cross",
                 description: "Description for Item 6"
             },
             {
-                name: "Item 7",
+                name: "North Temple",
                 description: "Description for Item 7"
             },
             {
-                name: "Item 8",
+                name: "Salt Lake Central",
                 description: "Description for Item 8"
             },
             {
-                name: "Item 9",
+                name: "Murray Central Station",
                 description: "Description for Item 9"
             },
             {
-                name: "Item 10",
+                name: "South Jordan Station",
                 description: "Description for Item 10"
             },
             {
-                name: "Item 11",
+                name: "Draper Station",
                 description: "Description for Item 11"
             },
             {
-                name: "Item 12",
+                name: "Lehi Station",
+                description: "Description for Item 12"
+            },
+            {
+                name: "American Fork Station",
+                description: "Description for Item 12"
+            },
+            {
+                name: "Orem Central",
+                description: "Description for Item 12"
+            },
+            {
+                name: "Provo Station",
                 description: "Description for Item 12"
             }
         ]
@@ -57,4 +69,4 @@ function HomeItemsViewModel() {
     return viewModel;
 }
 
-module.exports = HomeItemsViewModel;
+module.exports = RoutesItemsViewModel;

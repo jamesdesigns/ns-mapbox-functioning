@@ -17,7 +17,8 @@
         font-size: 72;
         vertical-align: top;
         // horizontal-align: center;
-        color: $page-icon-color;
+        // color: $page-icon-color;
+        color: red;
         margin-top: 20%;
     }
 }
@@ -28,5 +29,12 @@
 // }
 
 .action-bar {
+    background-color: red;
+}
+
+// TabView bar
+
+.customTab {
+    color: red;
     background-color: red;
 }
