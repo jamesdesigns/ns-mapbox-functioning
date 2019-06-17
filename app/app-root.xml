@@ -11,10 +11,11 @@ http://docs.nativescript.org/cookbook/ui/tab-view
     <TabViewItem title="Map &#xff041;">
         <Frame defaultPage="map/map-page"></Frame>
     </TabViewItem>
-        <!-- <TabViewItem title="Alerts &#xff0f3;">
-        <Frame defaultPage="alerts/alerts-page"></Frame>
-    </TabViewItem> -->
-    <TabViewItem title="Settings &#xff004;">
+    <TabViewItem title="Favorites &#xff004;">
+        <Frame defaultPage="favorites/favorites-page"></Frame>
+    </TabViewItem>
+
+    <TabViewItem title="Settings &#xff0f3;"> 
         <Frame defaultPage="settings/settings-page"></Frame>
     </TabViewItem>
 </TabView>
