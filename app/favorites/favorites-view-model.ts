@@ -11,7 +11,7 @@ const observableModule = require("tns-core-modules/data/observable");
 
 // const headerItemTemplate = `
 //     <GridLayout class="header-linear">
-//         <Label text="Swipe Right to Add to Favourites"
+//         <Label text="Swipe Right to Add to Favorites"
 //             horizontalAlignment="center" />
 //     </GridLayout>
 // `;
