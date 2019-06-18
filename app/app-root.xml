@@ -15,7 +15,7 @@ http://docs.nativescript.org/cookbook/ui/tab-view
         <Frame defaultPage="favorites/favorites-page"></Frame>
     </TabViewItem>
 
-    <TabViewItem title="&#xff0f3;"> 
+    <TabViewItem title="&#xff013;"> 
         <Frame defaultPage="settings/settings-page"></Frame>
     </TabViewItem>
 </TabView>
