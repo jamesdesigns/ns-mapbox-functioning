@@ -5,7 +5,7 @@ const { GridLayout, GridUnitType, ItemSpec } = require("ui/layouts/grid-layout")
 const { Animation } = require("ui/animation");
 const { screen } = require("platform");
 
-const slidesView = require("./slides-view");
+const slidesView = require('./slides-view');
 
 function WelcomeViewModel(slideContentView) {
     slideContentView.content = slidesView;

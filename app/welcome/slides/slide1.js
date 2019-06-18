@@ -11,5 +11,4 @@ let slide = `
 	</GridLayout>
 </GridLayout>
 `
-
 module.exports = { slide }
