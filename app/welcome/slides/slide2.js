@@ -7,7 +7,7 @@ let slide = `
 		<Label class="fa carousel-item-icon" text="&#xf1d8;" textWrap="true"></Label>
 	</GridLayout>
 	<GridLayout width="49%" row="2" horizontalAlignment="center" verticalAlignment="center">
-		<Label class="opensans-regular carousel-item-desc" text="It is easy to use and makes transactions quick even while you are on the move."
+		<Label class="opensans-regular carousel-item-desc" text="It is easy to use and makes it easy for you to find your destination and get there on time."
 		 textWrap="true"></Label>
 	</GridLayout>
 </GridLayout>
