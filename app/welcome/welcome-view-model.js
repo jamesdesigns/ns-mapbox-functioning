@@ -2,10 +2,10 @@ const observableModule = require("data/observable");
 const topmost = require("ui/frame").topmost;
 let builder = require("ui/builder");
 const { GridLayout, GridUnitType, ItemSpec } = require("ui/layouts/grid-layout");
-const { Animation } = require('ui/animation');
+const { Animation } = require("ui/animation");
 const { screen } = require("platform");
 
-const slidesView = require('./slides-view');
+const slidesView = require("./slides-view");
 
 function WelcomeViewModel(slideContentView) {
     slideContentView.content = slidesView;
