@@ -1,7 +1,8 @@
 const application = require("tns-core-modules/application");
-// import * as app from 'tns-core-modules/application';
-application.run({ moduleName: "app-root" });
-// app.run({ moduleName: 'app-root'});
+
+// application.run({ moduleName: "app-root" }); // Original
+application.start({ moduleName: "welcome/welcome-page" });
+
 /*
 Do not place any code after the application has been started as it will not
 be executed on iOS.
