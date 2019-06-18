@@ -8,7 +8,7 @@
     </ActionBar>
 
     <GridLayout class="page-content">
-        <Label class="page-icon fa" text="&#xf002;"></Label>
-        <Label class="page-placeholder" text="<!-- Search page content goes here -->"></Label>
+        <!-- <Label class="page-icon fa" text="&#xf002;"></Label>
+        <Label class="page-placeholder" text=""></Label> -->
     </GridLayout>
 </Page>
