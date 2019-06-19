@@ -1,5 +1,10 @@
 const observableModule = require("tns-core-modules/data/observable");
 
+// new 
+const application = require("tns-core-modules/application");
+
+application.run({ moduleName: "app-root" });
+
 function RoutesItemsViewModel() {
     const viewModel = observableModule.fromObject({
         items: [
