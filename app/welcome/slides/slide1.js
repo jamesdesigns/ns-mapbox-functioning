@@ -1,7 +1,7 @@
 let slide = `
 <GridLayout row="0" rows="*, 2*, *">
 	<GridLayout width="57%" row="0" horizontalAlignment="center" verticalAlignment="center">
-		<Label class="lobster-regular carousel-item-head" text="Welcome to" textWrap="true"></Label>
+		<Label class="lobster-regular carousel-item-head" text="Welcome to UTA MOTION" textWrap="true"></Label>
 	</GridLayout>
 	<GridLayout class="carousel-item-circle" row="1" horizontalAlignment="center" verticalAlignment="center">
 		<Label class="fa carousel-item-icon" text="&#xf041;" textWrap="true"></Label>
