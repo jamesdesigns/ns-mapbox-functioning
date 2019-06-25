@@ -19,7 +19,7 @@
     "nativescript-mapbox": "^4.4.1",
     "nativescript-theme-core": "~1.0.4",
     "nativescript-ui-listview": "^6.4.0",
-    "tns-core-modules": "^5.4.2"
+    "tns-core-modules": "^5.4.3"
   },
   "devDependencies": {
     "eslint": "~5.8.0",

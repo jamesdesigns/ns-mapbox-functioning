@@ -1,14 +1,14 @@
 <Page
     class="page"
-    navigatingTo="onNavigatingTo"  
+    navigatingTo="navigatingTo"  
     xmlns="http://schemas.nativescript.org/tns.xsd"
     xmlns="http://www.nativescript.org/tns.xsd"
     xmlns:lv="nativescript-ui-listview"
     >
 
-    <!-- <ActionBar class="action-bar">
+    <ActionBar class="action-bar">
         <Label class="action-bar-title" text="Favorites"></Label>
-    </ActionBar> -->
+    </ActionBar>
     <ActionBar class="action-bar">
         <GridLayout class="action-bar-title" widht="100%">
         <Label text="Favorites"></Label>
@@ -20,10 +20,7 @@
     </ActionBar>
 
     <GridLayout class="page-content">
-    <!-- <Label class="page-icon fa" text="&#xf002;"></Label> -->
-    <!-- <Label class="page-placeholder" text="This is the Favorites Page"></Label> -->
-    
-    <!-- This is new for Favorites Plugin -->
+        <!-- This is new for Favorites Plugin -->
      <lv:RadListView id="list-view" class="list-group" items="{{ dataItems }}"
             loaded="{{ onRadListViewLoaded }}" swipeActions="true"
             itemTemplateSelector="{{ selectItemTemplate }}" separatorColor="transparent"

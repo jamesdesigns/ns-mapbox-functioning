@@ -12,4 +12,4 @@ const slide = `
 	</GridLayout>
 </GridLayout>
 `
-module.exports = { slide };
+module.exports = { slide }

@@ -1,9 +1,10 @@
 const observableModule = require("tns-core-modules/data/observable");
 
-// new 
+// New. This helps the onboarding start with Welcome and then
+// proceed with the TabView on the remaining pages of the app
 const application = require("tns-core-modules/application");
 
-application.run({ moduleName: "app-root" });
+// End of adding new addition to the following above
 
 function RoutesItemsViewModel() {
     const viewModel = observableModule.fromObject({
@@ -75,3 +76,5 @@ function RoutesItemsViewModel() {
 }
 
 module.exports = RoutesItemsViewModel;
+
+application.run({ moduleName: "app-root" });

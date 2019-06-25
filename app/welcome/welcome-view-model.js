@@ -1,6 +1,6 @@
 const observableModule = require("data/observable");
 const topmost = require("ui/frame").topmost;
-let builder = require("ui/builder");
+const builder = require("ui/builder");
 const { GridLayout, GridUnitType, ItemSpec } = require("ui/layouts/grid-layout");
 const { Animation } = require("ui/animation");
 const { screen } = require("platform");
@@ -17,7 +17,7 @@ function WelcomeViewModel(slideContentView) {
         slidesView: slidesView,
         screenWidth: screen.mainScreen.widthDIPs,
         skipIntro() {
-            topmost().navigate("./routes/routes-items-page");
+           topmost().navigate("./routes/routes-items-page");
         },
         onSwipe(args) {
             let prevSlideNum = this.currentSlideNum;
@@ -51,9 +51,8 @@ function WelcomeViewModel(slideContentView) {
                 duration: 500
             });
 
-            var animationSet = new Animation(definitions);
+            let animationSet = new Animation(definitions);
             animationSet.play().then(() => {
-                // console.log("Animation finished");
             })
                 .catch((e) => {
                     console.log(e.message);
