@@ -11,23 +11,33 @@ function RoutesItemsViewModel() {
         items: [
             {
                 name: "Ogden",
-                description: "Description for Item 1"
+                station: "Ogden Station",
+                description: "2393 South Wall Avenue",
+                description2: "Ogden, UT 84511"
             },
             {
                 name: "Roy",
-                description: "Description for Item 2"
+                station: "Roy Station",
+                description: "4155 S. Sandridge Dr.",
+                description2: "Roy, UT"
             },
             {
                 name: "Clearfield",
-                description: "Description for Item 3"
+                station: "Clearfield Station",
+                description: "1250 S. State St.",
+                description2: "Clearfield, UT"
             },
             {
                 name: "Layton",
-                description: "Description for Item 4"
+                station: "Layton Station",
+                description: "150 S. Main St.",
+                description2: "Layton, UT"
             },
             {
                 name: "Farmington",
-                description: "Description for Item 5"
+                station: "Farmington Station",
+                description: "450 N. 850 W.",
+                description2: "Farmington, UT"
             },
             {
                 name: "Woods Cross",

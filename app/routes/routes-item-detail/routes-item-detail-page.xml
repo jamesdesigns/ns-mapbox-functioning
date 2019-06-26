@@ -8,7 +8,9 @@
         <Label class="action-bar-title" text="{{ name }}"></Label>
     </ActionBar>
 
-    <GridLayout>
-        <Label class="m-10 h3" text="{{ description }}" verticalAlignment="top" ></Label>
-    </GridLayout>
+    <StackLayout orientation="vertical" width="210" height="210">
+        <Label class="m-10" row="0" col="0" colspan="2" text="{{ station }}"></Label>
+        <Label class="m-10 h3" row="0" col="1" colspan="2" text="{{ description }}"></Label> 
+        <Label class="m-10 h3" row="0" col="2" colSpan="2" text="{{ description2 }}"></Label> 
+    </StackLayout>
 </Page>
