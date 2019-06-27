@@ -1,0 +1,75 @@
+<Page xmlns:RL="nativescript-ripple" xmlns="http://schemas.nativescript.org/tns.xsd"
+    shownModally="onShownModally">
+    <!-- <StackLayout class="p-20"> -->
+    <StackLayout>
+        <!--Add your page content here-->
+        <!-- <Label textWrap="true" text="Play with NativeScript!" class="h2 description-label" />
+        <Label textWrap="true" text="Write code in the editor or drag and drop components to build a NativeScript mobile application."
+            class="h2 description-label" />
+        <Label textWrap="true" text="Scan the QR code with your mobile device and watch the changes sync live while you play with the code."
+            class="h2 description-label" /> -->
+
+        <Label class="h2 text-center" text="Departure Times" textWrap="true"></Label>
+
+        <StackLayout orientation="horizontal" width="90%" height="35">
+            <Label text="5:24 am" width="111" height="35" backgroundColor="white" />
+            <Label text="6:24 am" width="111" height="35" backgroundColor="white" />
+            <Label text="6:54 am" width="112" height="35" backgroundColor="white" />
+        </StackLayout>
+        <StackLayout orientation="horizontal" width="90%" height="35">
+            <Label text="7:24 am" width="111" height="35" backgroundColor="white" />
+            <Label text="7:54 am" width="111" height="35" backgroundColor="white" />
+            <Label text="8:24 am" width="111" height="35" backgroundColor="white" />
+        </StackLayout>
+        <StackLayout orientation="horizontal" width="90%" height="35">
+            <Label text="8:54 am" width="111" height="35" backgroundColor="white" />
+            <Label text="9:24 am" width="111" height="35" backgroundColor="white" />
+            <Label text="No Stop" width="112" height="35" backgroundColor="white" />
+        </StackLayout>
+        <StackLayout orientation="horizontal" width="90%" height="35">
+            <Label text="10:24 am" width="111" height="35" backgroundColor="white" />
+            <Label text="No Stop" width="111" height="35" backgroundColor="white" />
+            <Label text="11:24 am" width="111" height="35" backgroundColor="white" />
+        </StackLayout>
+        <StackLayout orientation="horizontal" width="90%" height="35">
+            <Label text="12:24 pm" width="111" height="35" backgroundColor="white" />
+            <Label text="1:24 pm" width="111" height="35" backgroundColor="white" />
+            <Label text="2:24 pm" width="111" height="35" backgroundColor="white" />
+        </StackLayout>
+        <StackLayout orientation="horizontal" width="90%" height="35">
+            <Label text="3:24 pm" width="111" height="35" backgroundColor="white" />
+            <Label text="3:54 pm" width="111" height="35" backgroundColor="white" />
+            <Label text="4:24 pm" width="112" height="35" backgroundColor="white" />
+        </StackLayout>
+        <StackLayout orientation="horizontal" width="90%" height="35">
+            <Label text="4:54 pm" width="111" height="35" backgroundColor="white" />
+            <Label text="5:24 pm" width="111" height="35" backgroundColor="white" />
+            <Label text="5:54 pm" width="111" height="35" backgroundColor="white" />
+        </StackLayout>
+        <StackLayout orientation="horizontal" width="90%" height="35">
+            <Label text="6:24 pm" width="111" height="35" backgroundColor="white" />
+            <Label text="6:54 pm" width="111" height="35" backgroundColor="white" />
+            <Label text="7:24 pm" width="112" height="35" backgroundColor="white" />
+        </StackLayout>
+        <StackLayout orientation="horizontal" width="90%" height="35">
+            <Label text="7:54 pm" width="111" height="35" backgroundColor="white" />
+            <Label text="No Stop" width="111" height="35" backgroundColor="white" />
+            <Label text="8:54 pm" width="111" height="35" backgroundColor="white" />
+        </StackLayout>
+        <StackLayout orientation="horizontal" width="90%" height="35">
+            <Label text="No Stop" width="111" height="35" backgroundColor="white" />
+            <Label text="9:54 pm" width="111" height="35" backgroundColor="white" />
+            <Label text="10:54 pm" width="111" height="35" backgroundColor="white" />
+        </StackLayout>
+        <StackLayout orientation="horizontal" width="90%" height="35">
+            <Label text="11:54 pm" width="111" height="35" backgroundColor="white" />
+            <Label text="12:24 pm" width="111" height="35" backgroundColor="white" />
+            <Label text="No Stop" width="111" height="35" backgroundColor="white" />
+        </StackLayout>
+
+
+
+        <!-- <Button class="btn btn-primary" text="Submit" tap="submit"></Button> -->
+        <Button class="btn btn-outline" text="Close" tap="close"></Button>
+    </StackLayout>
+</Page>

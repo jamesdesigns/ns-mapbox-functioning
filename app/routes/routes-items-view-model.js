@@ -1,4 +1,5 @@
 const observableModule = require("tns-core-modules/data/observable");
+const topmost = require("ui/frame").topmost; // New for MODAL
 
 // New. This helps the onboarding start with Welcome and then
 // proceed with the TabView on the remaining pages of the app
@@ -8,6 +9,32 @@ const application = require("tns-core-modules/application");
 
 function RoutesItemsViewModel() {
     const viewModel = observableModule.fromObject({
+
+        // NEW MODAL BEGINS HERE ---------------------
+        showModal() {
+            const page = topmost().currentPage;
+            page.showModal(
+              "./modal/modal", // Path to the xml file of modal without extension
+              { // Pass any context you want to use in the modal
+                context: "Some data",
+                foodType: "Veg",
+                food: [
+                  {
+                    name: "Carrot"
+                  },
+                  {
+                    name: "Potatoe"
+                  }
+                ]
+              },
+              function closeCallback(result) { // you can customise this callback the way you want
+                console.log("Result was: ", result);
+              },
+              false // Full screen or not? (on iOS the modal is fullscreen irrespective of this value)
+            );
+        },
+        // End of NEW MODAL --------------------------
+
         items: [
             {
                 name: "Ogden",
@@ -53,7 +80,7 @@ function RoutesItemsViewModel() {
             },
             {
                 name: "Salt Lake Central",
-                station: "Salt Lake Central Station",
+                station: "Salt Lake Central",
                 description: "250 S. 600 W.",
                 description2: "Salt Lake City, UT"
             },
@@ -98,7 +125,8 @@ function RoutesItemsViewModel() {
                 description: "690 S. University Ave.",
                 description2: "Provo, UT"
             }
-        ]
+        ],
+        
     });
 
     return viewModel;
