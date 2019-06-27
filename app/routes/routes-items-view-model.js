@@ -41,19 +41,27 @@ function RoutesItemsViewModel() {
             },
             {
                 name: "Woods Cross",
-                description: "Description for Item 6"
+                station: "Wood Cross Station",
+                description: "750 S. 800 W.",
+                description2: "Woods Cross, UT"
             },
             {
                 name: "North Temple",
-                description: "Description for Item 7"
+                station: "North Temple Station",
+                description: "500 W. North Temple",
+                description2: "Salt Lake City, UT"
             },
             {
                 name: "Salt Lake Central",
-                description: "Description for Item 8"
+                station: "Salt Lake Central Station",
+                description: "250 S. 600 W.",
+                description2: "Salt Lake City, UT"
             },
             {
                 name: "Murray Central Station",
-                description: "Description for Item 9"
+                station: "Murray, UT",
+                description: "140 W. Vine St.",
+                description2: "Murray, UT"
             },
             {
                 name: "South Jordan Station",
