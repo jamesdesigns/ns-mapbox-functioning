@@ -1,7 +1,7 @@
 <Page
     loaded="pageLoaded"
-    class="page"
-    navigatingTo="onNavigatingTo"  
+    class="page" 
+    navigatingTo="onNavigatingTo" 
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
     <ActionBar class="action-bar">
@@ -17,8 +17,7 @@
         <Label class="m-10 h3" row="0" col="2" colSpan="2" text="{{ description2 }}"></Label> 
 
         <Button text="North Bound" tap="showModal" class="btn btn-primary m-t-10" />
-        <Button text="South Bound" tap="{{ showModal }}"
-                class="btn btn-primary m-t-10" />
+        <Button text="South Bound" tap="{{ showModal }}" class="btn btn-primary m-t-10" />
     </StackLayout>
     </ScrollView> <!-- Modal -->
 </Page>
