@@ -59,33 +59,44 @@ function RoutesItemsViewModel() {
             },
             {
                 name: "Murray Central Station",
-                station: "Murray, UT",
+                station: "Murray Central Station",
                 description: "140 W. Vine St.",
                 description2: "Murray, UT"
             },
             {
                 name: "South Jordan Station",
-                description: "Description for Item 10"
+                station: "South Jordan Station",
+                description: "10351 South Jordan Gateway",
+                description2: "South Jordan, UT"
             },
             {
                 name: "Draper Station",
-                description: "Description for Item 11"
+                station: "Draper Station",
+                description: "12997 S. FrontRunner Blvd.",
+                description2: "Draper, UT"
             },
             {
                 name: "Lehi Station",
-                description: "Description for Item 12"
+                station: "Lehi Station",
+                description: "3101 N. Ashton Blvd.",
+                description2: "Lehi, UT"
             },
             {
                 name: "American Fork Station",
-                description: "Description for Item 12"
+                station: "American Fork Station",
+                description: "782 W. 200 S.",
+                description2: "American Fork, UT"
             },
             {
                 name: "Orem Central",
-                description: "Description for Item 12"
+                station: "Orem Central Station",
+                description: "1350 W. 900 S."
             },
             {
                 name: "Provo Station",
-                description: "Description for Item 12"
+                station: "Provo Station",
+                description: "690 S. University Ave.",
+                description2: "Provo, UT"
             }
         ]
     });
