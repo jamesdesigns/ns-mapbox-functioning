@@ -1,5 +1,5 @@
 const observableModule = require("tns-core-modules/data/observable");
-const topmost = require("ui/frame").topmost; // New for MODAL
+const topmost = require("tns-core-modules/ui/frame").topmost; // New for MODAL
 
 // New. This helps the onboarding start with Welcome and then
 // proceed with the TabView on the remaining pages of the app
@@ -127,7 +127,7 @@ function RoutesItemsViewModel() {
         ],
         
     });
-    
+
     return viewModel;
 }
 

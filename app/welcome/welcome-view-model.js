@@ -1,9 +1,9 @@
-const observableModule = require("data/observable");
-const topmost = require("ui/frame").topmost;
-const builder = require("ui/builder");
-const { GridLayout, GridUnitType, ItemSpec } = require("ui/layouts/grid-layout");
-const { Animation } = require("ui/animation");
-const { screen } = require("platform");
+const observableModule = require("tns-core-modules/data/observable");
+const topmost = require("tns-core-modules/ui/frame").topmost;
+const builder = require("tns-core-modules/ui/builder");
+const { GridLayout, GridUnitType, ItemSpec } = require("tns-core-modules/ui/layouts/grid-layout");
+const { Animation } = require("tns-core-modules/ui/animation");
+const { screen } = require("tns-core-modules/platform");
 
 const slidesView = require('./slides-view');
 

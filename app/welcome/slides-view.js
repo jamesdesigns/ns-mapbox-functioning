@@ -1,5 +1,5 @@
 const builder = require("tns-core-modules/ui/builder");
-const { GridLayout, GridUnitType, ItemSpec } = require("ui/layouts/grid-layout");
+const { GridLayout, GridUnitType, ItemSpec } = require("tns-core-modules/ui/layouts/grid-layout");
 
 const slides = require('./slides');
 
