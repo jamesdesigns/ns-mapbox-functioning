@@ -1,0 +1,12 @@
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+
+    <ActionBar title="Modal Dialogs" class="action-bar">
+    </ActionBar>
+    <ScrollView class="page">
+        <StackLayout>
+            <Button text="Station Info" tap="showModal" class="btn btn-primary m-t-20" />
+            <Button text="Station Info (from viewModel)" tap="{{ showModal }}"
+                class="btn btn-primary m-t-20" />
+        </StackLayout>
+    </ScrollView>
+</Page>
