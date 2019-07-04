@@ -4,6 +4,7 @@
     <StackLayout>
 
         <Label class="h2 text-center" text="Departure Times" textWrap="true"></Label>
+        <Label class="h2 text-center" text="South Bound" textWrap="true"></Label>
 
         <StackLayout orientation="horizontal" width="90%" height="35">
             <Label text="5:24 am" width="111" height="35" backgroundColor="white" />
