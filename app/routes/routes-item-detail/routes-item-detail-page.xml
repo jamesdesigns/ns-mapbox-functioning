@@ -3,6 +3,7 @@
     class="page" 
     navigatingTo="onNavigatingTo" 
     xmlns="http://schemas.nativescript.org/tns.xsd">
+    
 
     <ActionBar class="action-bar">
         <NavigationButton tap="onBackButtonTap" android.systemIcon="ic_menu_back"/>
@@ -10,14 +11,14 @@
     </ActionBar>
 
     <ScrollView class="page"><!-- For Modal -->
-    <StackLayout orientation="vertical" width="210" height="210">
+        <StackLayout orientation="vertical" width="210" height="210">
 
-        <Label class="m-10" row="0" col="0" colspan="2" text="{{ station }}"></Label>
-        <Label class="m-10 h3" row="0" col="1" colspan="2" text="{{ description }}"></Label> 
-        <Label class="m-10 h3" row="0" col="2" colSpan="2" text="{{ description2 }}"></Label> 
+            <Label class="m-10" row="0" col="0" colspan="2" text="{{ station }}"></Label>
+            <Label class="m-10 h3" row="0" col="1" colspan="2" text="{{ description }}"></Label> 
+            <Label class="m-10 h3" row="0" col="2" colSpan="2" text="{{ description2 }}"></Label> 
 
-        <Button text="North Bound" tap="showModal" class="btn btn-primary m-t-10" />
-        <Button text="South Bound" tap="{{ showModal }}" class="btn btn-primary m-t-10" />
-    </StackLayout>
+            <Button text="North Bound" tap="showModal" class="btn btn-primary m-t-10" />
+            <Button text="South Bound" tap="{{ showModal }}" class="btn btn-primary m-t-10" />
+        </StackLayout>
     </ScrollView> <!-- Modal -->
 </Page>

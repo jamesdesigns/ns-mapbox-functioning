@@ -1,4 +1,4 @@
-const RoutesItemsViewModel = require("./routes-items-view-model");
+const RoutesItemsViewModel = require("./routes-items-view-model"); // New for Modal
 const routesItemsViewModel = new RoutesItemsViewModel(); // New for MODAL
 
 
@@ -13,7 +13,7 @@ function onItemTap(args) {
     const tappedItem = view.bindingContext;
 
     page.frame.navigate({
-        // moduleName: "home/home-item-detail/home-item-detail-page",
+        // moduleName: "home/home-item-detail/home-item-detail-page", 
         moduleName: "routes/routes-item-detail/routes-item-detail-page",
         context: tappedItem,
         animated: true,
