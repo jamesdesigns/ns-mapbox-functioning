@@ -1,9 +1,11 @@
 
 
-
 //
 //
 // Beginning of Original
+
+
+
 function onNavigatingTo(args) {
     const page = args.object;
 
@@ -16,6 +18,9 @@ function onBackButtonTap(args) {
 
     page.frame.goBack();
 }
+
+
+
 
 // function onItemTap(args) {
 //     const view = args.view;

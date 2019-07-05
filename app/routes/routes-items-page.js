@@ -5,16 +5,19 @@ exports.pageLoaded = function(args) {
     page.bindingContext = routesItemsViewModel;
   } // New for Modal
 
+ // THis originally belongs here 
 function onNavigatingTo(args) {
     const component = args.object;
     component.bindingContext = new RoutesItemsViewModel();
 }
 
+// This originally belongs here
 function onItemTap(args) {
     const view = args.view;
     const page = view.page;
     const tappedItem = view.bindingContext;
 
+    // This originally belongs here
     page.frame.navigate({
         // moduleName: "home/home-item-detail/home-item-detail-page", 
         moduleName: "routes/routes-item-detail/routes-item-detail-page",
