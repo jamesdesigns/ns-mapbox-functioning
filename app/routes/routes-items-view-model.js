@@ -42,7 +42,8 @@ function RoutesItemsViewModel() {
                 name: "Ogden",
                 station: "Ogden Station",
                 description: "2393 South Wall Avenue",
-                description2: "Ogden, UT 84511"
+                description2: "Ogden, UT 84511",
+                times: `8:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM`
             },
             {
                 name: "Roy",

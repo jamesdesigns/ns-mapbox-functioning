@@ -4,7 +4,7 @@ exports.pageLoaded = function (args) {
   const page = args.object;
 };
 
-exports.alertON = function () {
+exports.alertOgdenN = function () {
   dialogsModule.alert({
     title: "North Bound",
     titletwo: "South Bound",
@@ -16,7 +16,7 @@ exports.alertON = function () {
   });
 };
 
-exports.alertOS = function () {
+exports.alertOgdenS = function () {
   dialogsModule.alert({
     title: "South Bound",
     message: `8:00 AM  9:00 AM  10:00 AM  2:00 PM  3:30 PM 4:00 PM  7:00 PM  10:00 PM 10:35 PM`,
