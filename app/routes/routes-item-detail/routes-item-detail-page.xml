@@ -10,15 +10,18 @@
         <Label class="action-bar-title" text="{{ name }}"></Label>
     </ActionBar>
 
-    <ScrollView class="page"><!-- For Modal -->
+    <ScrollView class="page">
+    <!-- For Modal -->
         <StackLayout orientation="vertical" width="210" height="210">
-
             <Label class="m-10" row="0" col="0" colspan="2" text="{{ station }}"></Label>
             <Label class="m-10 h3" row="0" col="1" colspan="2" text="{{ description }}"></Label> 
             <Label class="m-10 h3" row="0" col="2" colSpan="2" text="{{ description2 }}"></Label> 
+            <!-- <Button text="North Bound" tap="{{ showModal }}" class="btn btn-primary m-t-10" />
+            <Button text="South Bound" tap="{{ showModal }}" class="btn btn-primary m-t-10" /> -->
 
-            <Button text="North Bound" tap="{{ showModal }}" class="btn btn-primary m-t-10" />
-            <Button text="South Bound" tap="{{ showModal }}" class="btn btn-primary m-t-10" />
+             <Button class="btn btn-primary m-t-10" text="North Bound" tap="alertON"></Button>
+            <Button class="btn btn-primary m-t-10" text="South Bound" tap="alertOS"></Button>
         </StackLayout>
-    </ScrollView> <!-- Modal -->
+    </ScrollView> 
+    <!-- Modal -->
 </Page>

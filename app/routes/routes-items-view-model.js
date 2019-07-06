@@ -1,4 +1,5 @@
 const observableModule = require("tns-core-modules/data/observable");
+
 const topmost = require("tns-core-modules/ui/frame").topmost; // New for MODAL
 
 // New. This helps the onboarding start with Welcome and then
@@ -9,6 +10,32 @@ const application = require("tns-core-modules/application");
 
 function RoutesItemsViewModel() {
     const viewModel = observableModule.fromObject({
+        // New for Modal
+        showModal() {
+            const page = topmost().currentPage;
+            page.showModal(
+              "./modal/modal", // Path to the xml file of modal without extension
+              { // Pass any context you want to use in the modal
+                context: "Some data",
+                foodType: "Veg",
+                food: [
+                  {
+                    name: "Carrot"
+                  },
+                  {
+                    name: "Potatoe"
+                  }
+                ]
+              },
+              function closeCallback(result) { // you can customise this callback the way you want
+                console.log("Result was: ", result);
+              },
+              false // Full screen or not? (on iOS the modal is fullscreen irrespective of this value)
+            );
+          },
+          // End of New For Modal
+          
+
 
         items: [
             {
@@ -105,7 +132,7 @@ function RoutesItemsViewModel() {
         
     });
 
-    return viewModel;
+    return viewModel; // New for Modal
 }
 
 module.exports = RoutesItemsViewModel;
