@@ -12,25 +12,23 @@
 
     <ScrollView class="page">
     <!-- For Modal -->
-        <StackLayout orientation="vertical" width="230" height="510">
+        <StackLayout orientation="vertical" width="230" height="610">
             <Label class="m-10" row="0" col="0" colspan="2" text="{{ station }}"></Label>
             <Label class="m-10 h3" row="0" col="1" colspan="2" text="{{ address }}"></Label> 
             <Label class="m-10 h3" row="0" col="2" colspan="2" text="{{ city }}"></Label>
             
            
-            <!-- <Button text="North Bound" tap="{{ showModal }}" class="btn btn-primary m-t-10" />
-            <Button text="South Bound" tap="{{ showModal }}" class="btn btn-primary m-t-10" /> -->
+            <!-- <Button text="North Bound" tap="{{ showModal }}" class="btn btn-primary m-t-10" />-->
+            <!-- <Button text="South Bound" tap="{{ showModal }}" class="btn btn-primary m-t-10" />  -->
 
              <Button class="btn btn-primary m-t-10" text="North Bound" tap="alertOgdenN"></Button>
             <Button class="btn btn-primary m-t-10" text="South Bound" tap="alertOgdenS"></Button>
+            <!-- <Label class="m-10" row="0" col="0" colspan="2"  text="{{ northBound }}"> -->
+            <Label class="m-10 h3" row="0" col="2" colspan="2" textWrap="true" text="{{ NBtimes }}"></Label>
+            <!-- <Label class="m-10" row="0" col="0" colspan="2"  text="{{ southBound }}"> -->
+            <Label class="m-10 h3" row="0" col="2" colspan="2" textWrap="true" text="{{ SBtimes }}"></Label>
+   
 
-            <!-- <Label class="m-10 h3" row="0" col="2" colspan="2" textWrap="true" text="{{ times }}"></Label> -->
-    
-            <FlexboxLayout height="200" flexDirection="column">
-                <Label textWrap="true" text=" {{ times }}" backgroundColor="#EEEEEE" flexGrow="1" />
-            </FlexboxLayout>
-            
-            
         </StackLayout>
     </ScrollView> 
     <!-- Modal -->
