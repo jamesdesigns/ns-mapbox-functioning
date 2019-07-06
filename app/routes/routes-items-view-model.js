@@ -41,93 +41,107 @@ function RoutesItemsViewModel() {
             {
                 name: "Ogden",
                 station: "Ogden Station",
-                description: "2393 South Wall Avenue",
-                description2: "Ogden, UT 84511",
+                address: "2393 South Wall Avenue",
+                city: "Ogden, UT 84511",
                 times: `8:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM`
             },
             {
                 name: "Roy",
                 station: "Roy Station",
-                description: "4155 S. Sandridge Dr.",
-                description2: "Roy, UT"
+                address: "4155 S. Sandridge Dr.",
+                city: "Roy, UT",
+                times: `6:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM`
             },
             {
                 name: "Clearfield",
                 station: "Clearfield Station",
-                description: "1250 S. State St.",
-                description2: "Clearfield, UT"
+                address: "1250 S. State St.",
+                city: "Clearfield, UT",
+                times: `4:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM`
             },
             {
                 name: "Layton",
                 station: "Layton Station",
-                description: "150 S. Main St.",
-                description2: "Layton, UT"
+                address: "150 S. Main St.",
+                city: "Layton, UT",
+                times: `1:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM`
             },
             {
                 name: "Farmington",
                 station: "Farmington Station",
-                description: "450 N. 850 W.",
-                description2: "Farmington, UT"
+                address: "450 N. 850 W.",
+                city: "Farmington, UT",
+                times: `3:30 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM`
             },
             {
                 name: "Woods Cross",
                 station: "Wood Cross Station",
-                description: "750 S. 800 W.",
-                description2: "Woods Cross, UT"
+                address: "750 S. 800 W.",
+                city: "Woods Cross, UT",
+                times: `1:30 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM`
             },
             {
                 name: "North Temple",
                 station: "North Temple Station",
-                description: "500 W. North Temple",
-                description2: "Salt Lake City, UT"
+                address: "500 W. North Temple",
+                city: "Salt Lake City, UT",
+                times: `2:15 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM`
             },
             {
                 name: "Salt Lake Central",
                 station: "Salt Lake Central",
-                description: "250 S. 600 W.",
-                description2: "Salt Lake City, UT"
+                address: "250 S. 600 W.",
+                city: "Salt Lake City, UT",
+                times: `1:20 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM`
             },
             {
                 name: "Murray Central Station",
                 station: "Murray Central Station",
-                description: "140 W. Vine St.",
-                description2: "Murray, UT"
+                address: "140 W. Vine St.",
+                city: "Murray, UT",
+                times: `2:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM`
             },
             {
                 name: "South Jordan Station",
                 station: "South Jordan Station",
-                description: "10351 South Jordan Gateway",
-                description2: "South Jordan, UT"
+                address: "10351 South Jordan Gateway",
+                city: "South Jordan, UT",
+                times: `12:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM`
             },
             {
                 name: "Draper Station",
                 station: "Draper Station",
-                description: "12997 S. FrontRunner Blvd.",
-                description2: "Draper, UT"
+                address: "12997 S. FrontRunner Blvd.",
+                city: "Draper, UT",
+                times: `1:40:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM`
             },
             {
                 name: "Lehi Station",
                 station: "Lehi Station",
-                description: "3101 N. Ashton Blvd.",
-                description2: "Lehi, UT"
+                address: "3101 N. Ashton Blvd.",
+                city: "Lehi, UT",
+                times: `3:10 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM`
             },
             {
                 name: "American Fork Station",
                 station: "American Fork Station",
-                description: "782 W. 200 S.",
-                description2: "American Fork, UT"
+                address: "782 W. 200 S.",
+                city: "American Fork, UT",
+                times: `6:10 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM`
             },
             {
                 name: "Orem Central",
                 station: "Orem Central Station",
-                description: "1350 W. 900 S.",
-                description2: "Orem, UT"
+                address: "1350 W. 900 S.",
+                city: "Orem, UT",
+                times: `5:10 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM`
             },
             {
                 name: "Provo Station",
                 station: "Provo Station",
-                description: "690 S. University Ave.",
-                description2: "Provo, UT"
+                address: "690 S. University Ave.",
+                city: "Provo, UT",
+                times: `4:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM`
             }
         ],
         

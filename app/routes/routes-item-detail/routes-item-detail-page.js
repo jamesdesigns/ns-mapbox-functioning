@@ -1,5 +1,8 @@
 const dialogsModule = require("ui/dialogs");
 
+
+
+
 exports.pageLoaded = function (args) {
   const page = args.object;
 };
@@ -25,6 +28,8 @@ exports.alertOgdenS = function () {
     console.log("The user closed the alert.");
   });
 };
+
+
 
 
 

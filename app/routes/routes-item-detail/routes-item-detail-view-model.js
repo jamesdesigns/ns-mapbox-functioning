@@ -4,6 +4,96 @@ const topmost = require("tns-core-modules/ui/frame").topmost;
 function RoutesItemDetailViewModel() {
   const viewModel = observableModule.fromObject({
 
+
+
+// Make a function that works for the alert 
+
+  
+        stations: [
+            {
+                location: "Ogden",
+                northBound: "8:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM",
+                southBound: "10:00 AM   11:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM"
+            },
+            {
+                location: "Roy",
+                northBound: "7:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM",
+                southBound: "10:00 AM   11:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM"   
+            },
+            {
+                location: "Clearfield",
+                northBound: "6:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM",
+                southBound: "10:00 AM   11:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM"   
+            },
+            {
+                location: "Layton",
+                northBound: "5:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM",
+                southBound: "10:00 AM   11:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM"   
+            },
+            {
+                location: "Farmington",
+                northBound: "4:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM",
+                southBound: "10:00 AM   11:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM"   
+            },
+            {
+                location: "Woods Cross",
+                northBound: "3:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM",
+                southBound: "10:00 AM   11:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM"   
+            },
+            {
+                location: "North Temple",
+                northBound: "2:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM",
+                southBound: "10:00 AM   11:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM"   
+            },
+            {
+                location: "Salt Lake Central",
+                northBound: "1:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM",
+                southBound: "10:00 AM   11:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM"   
+            },
+            {
+                location: "Murray Central",
+                northBound: "8:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM",
+                southBound: "10:00 AM   11:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM"   
+            },
+            {
+                location: "South Jordan",
+                northBound: "8:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM",
+                southBound: "10:00 AM   11:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM"   
+            },
+            {
+                location: "Draper",
+                northBound: "8:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM",
+                southBound: "10:00 AM   11:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM"   
+            },
+            {
+                location: "Lehi",
+                northBound: "8:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM",
+                southBound: "10:00 AM   11:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM"   
+            },
+            {
+                location: "America Fork",
+                northBound: "8:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM",
+                southBound: "10:00 AM   11:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM"   
+            },
+            {
+                location: "Orem Central",
+                northBound: "8:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM",
+                southBound: "10:00 AM   11:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM"   
+            },
+            {
+                location: "Provo",
+                northBound: "8:00 AM   9:00 AM  10:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM",
+                southBound: "10:00 AM   11:00 AM  2:00 PM   3:30 PM    4:00 PM  7:00 PM  10:00 PM 10:35 PM"   
+            },
+        ],
+   
+
+
+
+
+
+
+
     showModal() {
       const page = topmost().currentPage;
       page.showModal(
