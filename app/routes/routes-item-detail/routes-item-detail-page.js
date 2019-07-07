@@ -1,4 +1,5 @@
-const dialogsModule = require("ui/dialogs");
+const dialogsModule = require("tns-core-modules/ui/dialogs");
+
 
 
 

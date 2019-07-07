@@ -1,6 +1,8 @@
 const observableModule = require("tns-core-modules/data/observable");
 const topmost = require("tns-core-modules/ui/frame").topmost;
 
+
+
 function RoutesItemDetailViewModel() {
   const viewModel = observableModule.fromObject({
 

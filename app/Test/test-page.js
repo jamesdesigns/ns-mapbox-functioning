@@ -1,4 +1,4 @@
-const dialogsModule = require("ui/dialogs");
+const dialogsModule = require("tns-core-modules/ui/dialogs");
 
 exports.pageLoaded = function (args) {
   const page = args.object;
