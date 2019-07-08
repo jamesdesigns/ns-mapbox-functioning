@@ -1,13 +1,20 @@
+// This is Original and should stay
 const dialogsModule = require("tns-core-modules/ui/dialogs");
 
 
+// This is for the Modal Feature
+// const RoutesItemDetailViewModel = require("./routes-item-detail-view-model");
+// const routesItemDetailViewModel = new RoutesItemDetailViewModel();
+
+// exports.pageLoaded = function(args) {
+//   const page = args.object;
+//   page.bindingContext = routesItemDetailViewModel;
+// }
+
+// End of the Modal Feature code
 
 
-
-exports.pageLoaded = function (args) {
-  const page = args.object;
-};
-
+// This is for the Alert Function
 exports.alertOgdenN = function () {
   dialogsModule.alert({
     title: "North Bound",
@@ -19,7 +26,7 @@ exports.alertOgdenN = function () {
     console.log("The user closed the alert.");
   });
 };
-
+// This is for the Alert Function
 exports.alertOgdenS = function () {
   dialogsModule.alert({
     title: "South Bound",
@@ -33,31 +40,31 @@ exports.alertOgdenS = function () {
 
 
 
-
-// const RoutesItemViewModel = require("./routes-item-view-model");
-// const routesItemViewModel = new RoutesItemViewModel();
-
-// exports.pageLoaded = function(args) {
-//   const page = args.object;
-//   page.bindingContext = RoutesItemViewModel;
-// }
-
+// This is for the Modal Feature
 exports.showModal = function (args) {
     const page = args.object.page;
     page.showModal(
       "./modal/modal", // Path to the xml file of modal without extension
-      { // Pass any context you want to use in the modal
+      { 
+        // Passing NEW DATA to test the Modal
+       
+        // End of Passing NEW DATA to test the Modal
+        
+        
+        // Pass any context you want to use in the modal
         // you can pass anything you want as the context, even a viewModel!
-        context: "Some data",
-        foodType: "Veg",
-        food: [
-          {
-            name: "Carrot"
-          },
-          {
-            name: "Potatoe"
-          }
-        ]
+
+        // context: "Some data",
+        // foodType: "Veg",
+        // food: [
+        //   {
+        //     name: "Carrot"
+        //   },
+        //   {
+        //     name: "Potatoe"
+        //   }
+        // ]
+
       },
       function closeCallback(result) { // you can customise this callback the way you want
         // if modal was closed without submitting, this will still get called
@@ -69,6 +76,8 @@ exports.showModal = function (args) {
       false // Full screen or not? (on iOS the modal is fullscreen irrespective of this value)
     );
   }
+// End of the Modal Feature code
+
 
 
 // All Original -- BELOW THIS LINE

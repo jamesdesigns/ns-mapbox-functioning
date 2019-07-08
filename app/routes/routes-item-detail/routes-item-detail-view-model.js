@@ -6,7 +6,10 @@ const topmost = require("tns-core-modules/ui/frame").topmost;
 function RoutesItemDetailViewModel() {
   const viewModel = observableModule.fromObject({
 
+// This is new for the Modal Feature
 
+
+// End of the Modal Feature code
 
 // Make a function that works for the alert 
 
@@ -101,16 +104,18 @@ function RoutesItemDetailViewModel() {
       page.showModal(
         "./modal/modal", // Path to the xml file of modal without extension
         { // Pass any context you want to use in the modal
-          context: "Some data",
-          foodType: "Veg",
-          food: [
-            {
-              name: "Carrot"
-            },
-            {
-              name: "Potatoe"
-            }
-          ]
+         
+        //     context: "Some data",
+        //   foodType: "Veg",
+        //   food: [
+        //     {
+        //       name: "Carrot"
+        //     },
+        //     {
+        //       name: "Potatoe"
+        //     }
+        //   ]
+
         },
         function closeCallback(result) { // you can customise this callback the way you want
           console.log("Result was: ", result);

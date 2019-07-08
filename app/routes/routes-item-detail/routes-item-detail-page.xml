@@ -18,23 +18,30 @@
             <Label class="m-10 h3" row="0" col="2" colspan="2" text="{{ city }}"></Label>
             
            
-            <Button text="{{ showModal ? 'Hide' : 'Show' }}" tap="toggle" class="btn btn-primary m-t-10" />
-             <Button text="South Bound" tap="{{ showModal }}" class="btn btn-primary m-t-10" /> 
+            <Button text="North Bound" tap="showModal" class="btn btn-primary m-t-10" />
+            <Button text="South Bound" tap="{{ showModal }}" class="btn btn-primary m-t-10" /> 
 
-             <!-- <Button class="btn btn-primary m-t-10" text="{{ northBound ? 'Hide' : 'Show' }}" tap="alertOgdenN"></Button>
-             <Label text="North Bound Schedule" visibility="{{ northBound ? 'visible' : 'collapsed' }}"></Label>
-             <Button class="btn btn-primary m-t-10" text="{{ southBound ? 'Hide' : 'Show' }}" tap="alertOgdenS"></Button>
-             <Label text="South Bound Schedule" visibility="{{ southBound ? 'visible' : 'collapsed' }}"></Label> -->
 
-             <Button class="btn btn-primary m-t-10" text="North Bound" tap="alertOgdenN"></Button> 
+            <Button class="btn btn-primary m-t-10" text="North Bound" tap="alertOgdenN"></Button> 
             <Button class="btn btn-primary m-t-10" text="South Bound" tap="alertOgdenS"></Button> 
-            <!-- <Label class="m-10" row="0" col="0" colspan="2"  text="{{ northBound }}">
+
+<!--             
+            <Label class="m-10" row="0" col="0" colspan="2"  text="{{ northBound }}"> -->
             <Label class="m-10 h3" row="0" col="2" colspan="2" textWrap="true" text="{{ NBtimes }}"></Label>
-            <Label class="m-10" row="0" col="0" colspan="2"  text="{{ southBound }}">
-            <Label class="m-10 h3" row="0" col="2" colspan="2" textWrap="true" text="{{ SBtimes }}"></Label> -->
+           <!-- <Label class="m-10" row="0" col="0" colspan="2"  text="{{ southBound }}"> -->
+            <Label class="m-10 h3" row="0" col="2" colspan="2" textWrap="true" text="{{ SBtimes }}"></Label> 
    
 
+
+     <ListView stations="{{ stations }}" itemTap="onItemTap" class="list-group">
+        <ListView.itemTemplate>
+            <StackLayout orientation="horizontal" class="list-group-item">
+                <Label text="{{ location }}" textWrap="true"></Label>
+            </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>
         </StackLayout>
     </ScrollView> 
     <!-- Modal -->
+
 </Page>
