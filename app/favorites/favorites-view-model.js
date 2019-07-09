@@ -46,7 +46,6 @@ function createViewModel() {
         this.counter--;
         localStorage.setItem("counter", this.counter);
         this.set("message", getMessage(this.counter));
-        
     }
 
     
