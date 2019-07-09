@@ -1,22 +1,5 @@
 var Observable = require("tns-core-modules/data/observable").Observable;
 
-// var observableModule = require("tns-core-modules/data/observable");
-
-// // New Testing
-// function FavoritesViewModel() {
-//     var viewModel = observableModule.fromObject({
-//       listPickerCountries: ["Australia", "Belgium", "Bulgaria", "Canada", "Switzerland",
-//           "China", "Czech Republic", "Germany", "Spain", "Ethiopia", "Croatia", "Hungary",
-//           "Italy", "Jamaica", "Romania", "Russia", "United States"],
-//       selectedListPickerIndex: 0,
-  
-  
-//     });
-  
-//     return viewModel;
-//   }
-// End of Testing  
-
 
 
 function getMessage(counter) {
