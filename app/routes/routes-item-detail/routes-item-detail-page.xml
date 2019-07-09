@@ -11,6 +11,8 @@
     </ActionBar>
 
     <ScrollView class="page">
+
+   
     <!-- For Modal -->
         <StackLayout orientation="vertical" width="230" height="610">
             <Label class="m-10" row="0" col="0" colspan="2" text="{{ station }}"></Label>
@@ -36,13 +38,13 @@
    
 
 
-     <ListView stations="{{ stations }}" itemTap="onItemTap" class="list-group">
+     <!-- <ListView stations="{{ stations }}" itemTap="onItemTap" class="list-group">
         <ListView.itemTemplate>
             <StackLayout orientation="horizontal" class="list-group-item">
                 <Label text="{{ location }}" textWrap="true"></Label>
             </StackLayout>
         </ListView.itemTemplate>
-    </ListView>
+    </ListView> -->
         </StackLayout>
     </ScrollView> 
     <!-- Modal -->
