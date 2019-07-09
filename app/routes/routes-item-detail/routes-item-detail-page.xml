@@ -18,8 +18,8 @@
             <Label class="m-10 h3" row="0" col="2" colspan="2" text="{{ city }}"></Label>
             
            
-            <Button text="North Bound" tap="showModal" class="btn btn-primary m-t-10" />
-            <Button text="South Bound" tap="{{ showModal }}" class="btn btn-primary m-t-10" /> 
+            <!-- <Button text="North Bound" tap="showModal" class="btn btn-primary m-t-10" />
+            <Button text="South Bound" tap="{{ showModal }}" class="btn btn-primary m-t-10" />  -->
 
 
             <Button class="btn btn-primary m-t-10" text="North Bound" tap="alertOgdenN"></Button> 

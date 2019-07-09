@@ -1,6 +1,16 @@
-<Page
+<!-- Original Code Below -->
+<!-- <Page
     class="page"
     navigatingTo="navigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns="http://www.nativescript.org/tns.xsd"
+    xmlns:lv="nativescript-ui-listview"
+    >
+    -->
+
+<Page
+    class="page"
+    navigatingTo="onNavigatingTo"  
     xmlns="http://schemas.nativescript.org/tns.xsd"
     xmlns="http://www.nativescript.org/tns.xsd"
     xmlns:lv="nativescript-ui-listview"
@@ -9,7 +19,7 @@
     <ActionBar class="action-bar">
         <Label class="action-bar-title" text="Favorites"></Label>
     </ActionBar>
-    <ActionBar class="action-bar">
+    <!-- <ActionBar class="action-bar">
         <GridLayout class="action-bar-title" widht="100%">
         <Label text="Favorites"></Label>
         <StackLayout orientation="horizontal" horizontalAlignment="right" margin="0 15 0 15">
@@ -17,56 +27,14 @@
             <Image src="~/images/layout-grid.png" height="30" tap="{{ changeLayout }}" margin="0 5 0 5"></Image>
          </StackLayout>
          </GridLayout>   
-    </ActionBar>
+    </ActionBar> -->
 
-    <GridLayout class="page-content">
-        <!-- This is new for Favorites Plugin -->
-     <lv:RadListView id="list-view" class="list-group" items="{{ dataItems }}"
-            loaded="{{ onRadListViewLoaded }}" swipeActions="true"
-            itemTemplateSelector="{{ selectItemTemplate }}" separatorColor="transparent"
-            selectionBehavior="None" itemSwipeProgressStarted="onSwipeCellStarted"
-            pullToRefresh="true" pullToRefreshInitiated="{{ onPullToRefreshInitiated }}">
-    
+        <StackLayout class="p-20">
+        <Label text="Tap the button" class="h1 text-center"/>
+        <Button text="TAP" tap="{{ onTap }}" class="btn btn-primary btn-active"/>
+        <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+        <Label text=""/>
+        <Label text="Using LocalStorage to store the count, quit and re-open to see it saved!" textWrap="true"/>
+    </StackLayout>
 
-            <lv:RadListView.itemTemplates>
-                <template key="linear">
-                    <GridLayout rows="100" columns="120, *, 80" class="list-item list-item-linear">
-                        <Image col="0" rowSpan="2" src="{{ image }}" stretch="aspectFit" />
-                        <Label col="1" text="{{ product }}" class="h3 title-linear"
-                            textWrap="true" verticalAlignment="middle" />
-                        <Label col="2" text="{{ price }}" class="h2 price-linear"
-                            textWrap="true" verticalAlignment="middle" />
-                    </GridLayout>
-                </template>
-
-                <template key="grid">
-                    <GridLayout rows="100, 60" class="list-item list-item-grid">
-                        <Image row="0" src="{{ image }}" stretch="aspectFill"
-                            rowSpan="3" />
-                        <GridLayout row="1" rows="25, 35" columns="*, *"
-                            class="list-item-grid-background">
-                            <Label row="0" col="0" colSpan="2" text="{{ product }}"
-                                class="h3 title-grid" />
-                            <Label row="1" col="0" text="{{ price }}" class="h2 price-grid" />
-                            <Image row="1" col="1" src="{{ favourite ? '~/images/fav-solid.png' : '~/images/fav-outline.png'}}"
-                                class="fav-grid" tap="{{ toggleFavourite }}"
-                                horizontalAlignment="right" />
-                        </GridLayout>
-                    </GridLayout>
-                </template>
-            </lv:RadListView.itemTemplates>
-
-            <lv:RadListView.itemSwipeTemplate>
-                <GridLayout class="swipe-linear">
-                    <Image src="{{ favourite ? '~/images/fav-solid.png' : '~/images/fav-outline.png'}}"
-                        class="fav-linear" tap="{{ toggleFavourite }}"
-                        horizontalAlignment="left" margin="30"></Image>
-                </GridLayout>
-            </lv:RadListView.itemSwipeTemplate>
-        </lv:RadListView>
-
-        <ActivityIndicator busy="{{ isBusy }}" class="activity-indicator" />
-
-
-    </GridLayout>
 </Page>
