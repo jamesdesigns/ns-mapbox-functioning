@@ -1,23 +1,20 @@
 var Observable = require("tns-core-modules/data/observable").Observable;
+// var observableModule = require("tns-core-modules/data/observable");
 
-// New Testing
-// function getFavorites() {
-//     return localStorage.getItem("favorites", "[]");
-// }
-// function setFavorites(data) {
-//     return localStorage.setItem("favorites", JSON.stringify(data));
-// }
-
-// let data = getFavorites();
-// // add new
-// data.push({
-//     id: "NewFavId"
-// });
-// // delete existigm oe
-// data = data.filter((item) => item.id === "IdToDelete");
-// // update application settings
-// setFavorites(data);
-
+// // New Testing
+// function FavoritesViewModel() {
+//     var viewModel = observableModule.fromObject({
+//       listPickerCountries: ["Australia", "Belgium", "Bulgaria", "Canada", "Switzerland",
+//           "China", "Czech Republic", "Germany", "Spain", "Ethiopia", "Croatia", "Hungary",
+//           "Italy", "Jamaica", "Romania", "Russia", "United States"],
+//       selectedListPickerIndex: 0,
+  
+  
+//     });
+  
+//     return viewModel;
+//   }
+// End of Testing  
 
 
 
@@ -52,7 +49,10 @@ function createViewModel() {
         
     }
 
+    
+
     return viewModel;
 }
 
 exports.createViewModel = createViewModel;
+// module.exports = FavoritesViewModel;

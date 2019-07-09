@@ -35,6 +35,8 @@
         <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
         <Label text=""/>
         <Label text="Using LocalStorage to store the count, quit and re-open to see it saved!" textWrap="true"/>
+
+        <ListPicker items="{{ listPickerCountries }}" selectedIndex="{{ selectedListPickerIndex }}" />
     </StackLayout>
 
 </Page>

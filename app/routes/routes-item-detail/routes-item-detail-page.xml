@@ -22,12 +22,15 @@
             <Button text="South Bound" tap="{{ showModal }}" class="btn btn-primary m-t-10" />  -->
 
 
-            <Button class="btn btn-primary m-t-10" text="North Bound" tap="alertOgdenN"></Button> 
-            <Button class="btn btn-primary m-t-10" text="South Bound" tap="alertOgdenS"></Button> 
+        
+            
 
+            <Button class="btn btn-primary m-t-10" text="North Bound" tap="alertOgdenN"></Button> 
 <!--             
             <Label class="m-10" row="0" col="0" colspan="2"  text="{{ northBound }}"> -->
             <Label class="m-10 h3" row="0" col="2" colspan="2" textWrap="true" text="{{ NBtimes }}"></Label>
+
+            <Button class="btn btn-primary m-t-10" text="South Bound" tap="alertOgdenS"></Button> 
            <!-- <Label class="m-10" row="0" col="0" colspan="2"  text="{{ southBound }}"> -->
             <Label class="m-10 h3" row="0" col="2" colspan="2" textWrap="true" text="{{ SBtimes }}"></Label> 
    
