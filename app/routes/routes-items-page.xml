@@ -4,12 +4,14 @@
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
     <ActionBar class="action-bar">
-        <Label class="action-bar-title" text="Routes"></Label>
+        <Image width="150" src="~/images/uta-logo-v2.png" stretch="none" ></Image>
+        <!-- <Label class="action-bar-title" text="Routes"></Label> -->
     </ActionBar>
 
     <ListView items="{{ items }}" itemTap="onItemTap" class="list-group">
         <ListView.itemTemplate>
             <StackLayout orientation="horizontal" class="list-group-item">
+                <Label text="&#xff08a;   "></Label>
                 <Label text="{{ name }}" textWrap="true"></Label>
             </StackLayout>
         </ListView.itemTemplate>

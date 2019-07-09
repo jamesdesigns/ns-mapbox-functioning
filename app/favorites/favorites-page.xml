@@ -30,13 +30,22 @@
     </ActionBar> -->
 
         <StackLayout class="p-20">
-        <Label text="FrontRunner Favorites" class="h2 text-center"/>
-        <Button text="TAP" tap="{{ onTap }}" class="btn btn-primary btn-active"/>
+        <Label text="Favorite Stations" class="h2 text-center"/>
+         <Button text="&#xff08a; Provo" tap="{{ onTap }}" class="my-button text-left" />
+         <Button text="&#xff08a; Orem Central" tap="{{ onTap }}" class="my-button  text-left" />
+          <Button text="&#xff08a; American Fork" tap="{{ onTap }}" class="my-button  text-left" />
+          <Button text="&#xff08a; Lehi" tap="{{ onTap }}" class="my-button  text-left" />
+          <Button text="&#xff004; Draper" tap="{{ onTap }}" class="my-button  text-left" />
+          <Button text="&#xff08a; South Jordan" tap="{{ onTap }}" class="my-button  text-left" />
+
+        <Button text="Add To Favorites" tap="{{ onTap }}" class="btn btn-primary btn-active"/>
+     
         <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
         <Label text=""/>
-        <Label text="Using LocalStorage to store the count, quit and re-open to see it saved!" textWrap="true"/>
-
-        
+        <!-- <Label text="Using LocalStorage to store the count, quit and re-open to see it saved!" textWrap="true"/> -->
+    
     </StackLayout>
+
+  
 
 </Page>
