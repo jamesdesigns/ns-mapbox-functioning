@@ -29,7 +29,7 @@ navigatingTo="navigatingTo">
       <map:MapboxView
           accessToken="pk.eyJ1IjoiamFtZXNkZXNpZ25zIiwiYSI6ImNqdzJraDZ6dDA1MzMzem5uYWlvaWtqMXcifQ.TsX_YhN7MDaZ8zz5HYedFg"
           mapStyle="mapbox://styles/jamesdesigns/cjwjrdz4e02s01cn049tblo5u"
-          latitude="40.659775"
+          latitude="40.759775"
           longitude="-111.896019"
           zoomLevel="8"
           showUserLocation="true"

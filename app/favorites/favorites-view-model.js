@@ -1,7 +1,5 @@
 var Observable = require("tns-core-modules/data/observable").Observable;
 
-
-
 function getMessage(counter) {
     let ogden = "Ogden";
     let roy = "Roy";

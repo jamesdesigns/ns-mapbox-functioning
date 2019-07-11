@@ -11,7 +11,8 @@
         <!-- <Label class="page-icon fa" text="&#xf002;"></Label>
         <Label class="page-placeholder" text=""></Label> -->
 
-         <ListView items="{{ items }}" itemTap="onItemTap" class="list-group">
+        
+        <ListView items="{{ items }}" itemTap="onItemTap" class="list-group">
         <ListView.itemTemplate>
             <StackLayout orientation="horizontal" class="list-group-item">
                 <Label text="{{ name }}" textWrap="true"></Label>

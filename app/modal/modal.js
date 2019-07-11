@@ -24,6 +24,6 @@ exports.close = function (args) {
     }
 }
 
-// exports.submit = function (args) {
-//     closeCallback("pass your data from here to receive it in the parent page");
-// }
+exports.submit = function (args) {
+    closeCallback("pass your data from here to receive it in the parent page");
+}

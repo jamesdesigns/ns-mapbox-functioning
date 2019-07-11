@@ -1,19 +1,11 @@
 <Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
 
-    <ActionBar title="Dialogs" class="action-bar">
+    <ActionBar title="Modal Dialogs" class="action-bar">
     </ActionBar>
     <ScrollView class="page">
         <StackLayout>
-            <Label textWrap="true" class="body m-20" text="Ogden Station"></Label>
-            <Label textWrap="false" class="body m-20" text="2393 Wall Ave"></Label>
-            <Label textWrap="false" class="body m-20" text="Ogden, UT 84020"></Label>
-            <Label textWrap="true" class="body m-20" text="The following shows a few examples of how to use the NativeScript dialog module."></Label>
-            <Button class="btn btn-primary" text="North Bound" tap="alertON"></Button>
-            <Button class="btn btn-primary" text="South Bound" tap="alertOS"></Button>
-
-
-            <!-- <Button class="btn btn-primary" text="Login" tap="login"></Button>
-			<Button class="btn btn-primary" text="Action" tap="action"></Button> -->
+            <Button text="North Bound" tap="showModal" class="btn btn-primary m-t-20" />
+            <Button text="South Bound" tap="{{ showModal }}" class="btn btn-primary m-t-20" />
         </StackLayout>
     </ScrollView>
 </Page>

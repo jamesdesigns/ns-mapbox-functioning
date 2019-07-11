@@ -30,7 +30,7 @@
     </ActionBar> -->
 
         <StackLayout class="p-20">
-        <Label text="Favorite Stations" class="h2 text-center"/>
+        <Label text="My Favorites" class="h2 text-center"/>
           <Button text="&#xff08a;   Provo" tap="{{ onTap }}" class="my-button text-left" />
           <Button text="&#xff08a;   Orem Central" tap="{{ onTap }}" class="my-button text-left" />
           <Button text="&#xff08a;   American Fork" tap="{{ onTap }}" class="my-button text-left" />

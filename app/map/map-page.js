@@ -23,7 +23,10 @@ function onMapReady(args) {
         title: "Ogden",
         subtitle: "2393 S. Wall Ave.",
         selected: true, // makes the callout show immediately when the marker is added (note: only 1 marker can be selected at a time)
-        onCalloutTap: function() { console.log("Nice location marker callout tapped"); }
+        onCalloutTap: function() { 
+          // console.log("derp"); 
+          // MapViewModel.frame.navigate("./modal/modal");
+        }
       },
       {
         lat: 41.188679,
@@ -31,7 +34,7 @@ function onMapReady(args) {
         title: "Roy",
         subtitle: "4155 S. Sandridge Dr.",
         selected: true, // makes the callout show immediately when the marker is added (note: only 1 marker can be selected at a time)
-        onCalloutTap: function() { console.log("'Nice location' marker callout tapped"); }
+        onCalloutTap: function() { console.log("'derp2"); }
       },
       {
         lat: 41.094714,
@@ -95,7 +98,7 @@ function onMapReady(args) {
         title: "Orem Station",
         subtitle: "1350 W. 900 S.",
         selected: true, // makes the callout show immediately when the marker is added (note: only 1 marker can be selected at a time)
-        onCalloutTap: function() { console.log("'Nice location' marker callout tapped"); }
+        onCalloutTap: function() { console.log("'Orem Selected'"); }
       },
       {
         lat: 40.373743,
