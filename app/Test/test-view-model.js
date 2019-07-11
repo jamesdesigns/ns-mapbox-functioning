@@ -1,12 +1,14 @@
 const observableModule = require("tns-core-modules/data/observable");
 const topmost = require("tns-core-modules/ui/frame").topmost;
 
+
+
 function TestViewModel() {
   const viewModel = observableModule.fromObject({
     showModal() {
       const page = topmost().currentPage;
       page.showModal(
-        "./modal/modal", // Path to the xml file of modal without extension
+        "./modal/modal.xml", // Path to the xml file of modal without extension
         { // Pass any context you want to use in the modal
           context: "Some data",
           foodType: "Veg",
